@@ -2,12 +2,12 @@ import express from "express";
 import User from "../models/user";
 
 class userCotroller {
-  getAllUser = async (request: express.Request, response: express.Response) => {
+  getAllUser = async (req: express.Request, res: express.Response) => {
     try {
       const product = await User.find();
-      return response.status(200).json({ data: product });
+      return res.status(200).json({ data: product });
     } catch (error) {
-      return response.sendStatus(400);
+      return res.status(400).json({});
     }
   };
   getUser = async (req: express.Request, res: express.Response) => {
