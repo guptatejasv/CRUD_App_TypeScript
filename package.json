@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "main": "dist/server.js",
   "scripts": {
-    "start": "ts-node src/server.ts",
     "build": "tsc",
-    "test": "nodemon src/server.ts"
+    "start": "nodemon src/server.ts"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
